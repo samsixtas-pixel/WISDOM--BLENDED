@@ -1,0 +1,41 @@
+; Copy these values into the active XAMPP php.ini after reviewing host policy.
+; Development: keep timestamp validation enabled.
+expose_php = Off
+display_errors = Off
+display_startup_errors = Off
+log_errors = On
+error_log = /opt/lampp/htdocs/WISDOM2/storage/logs/php-error.log
+opcache.enable = 1
+opcache.enable_cli = 0
+opcache.memory_consumption = 256
+opcache.interned_strings_buffer = 24
+opcache.max_accelerated_files = 20000
+opcache.validate_timestamps = 1
+opcache.revalidate_freq = 2
+opcache.save_comments = 1
+opcache.jit = tracing
+opcache.jit_buffer_size = 128M
+file_uploads = On
+upload_max_filesize = 6M
+post_max_size = 8M
+max_file_uploads = 5
+max_execution_time = 30
+max_input_time = 30
+memory_limit = 256M
+max_input_vars = 2000
+session.use_strict_mode = 1
+session.use_only_cookies = 1
+session.use_trans_sid = 0
+session.cookie_httponly = 1
+session.cookie_samesite = Lax
+session.cookie_secure = 0
+session.gc_maxlifetime = 28800
+session.sid_length = 48
+session.sid_bits_per_character = 6
+cgi.fix_pathinfo = 0
+allow_url_include = Off
+
+; Enable only after confirming all deployment paths.
+; allow_url_fopen = Off
+; open_basedir = /opt/lampp/htdocs/WISDOM2:/opt/lampp/var/mysql:/tmp
+; disable_functions = exec,passthru,shell_exec,system,proc_open,popen,pcntl_exec,dl,show_source,highlight_file,php_strip_tags
