@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /avatar.php
+Disallow: /payment_proof.php
+Disallow: /admin_users_search.php
+Disallow: /logout.php
+Disallow: /notice_dismiss.php
+
+# Adjust this line if the app is not served from a sub-directory.
+Sitemap: https://example.com/sitemap.php
